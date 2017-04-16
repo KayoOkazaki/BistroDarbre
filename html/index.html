@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)"> -->
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/bxslider/jquery.bxslider.min.js"></script>
+    <script>
+        $(function(){
+            $('.bxslider').bxSlider({
+                auto: true,
+                mode: "fade",
+                speed: 3000,
+                randomStart: true,
+                pause:10000
+            });
+        });
+    </script>
+</head>
+<body>
+    <header id="top">
+        <!-- <h1>BistroDarbre</h1> -->
+        <div class="logo"><a href="index.html"><img src="images/logo_small.png" alt="bistrodarbre"></a></div>
+        <!-- スマホの時だけ -->
+        <!-- <div class="tel"><a href="tel:0312345678">03-1234-5678</a></div> -->
+        <div class="resavation">
+            <div class="tel">☎ 03-3760-0447</div>
+            <div class="mail"><img src="images/mail.gif" alt="web予約フォームはこちら"></div>
+        </div>
+        <nav>
+            <ul>
+                <li id="nav_top"><a href="concept.html">Top</a></li>
+                <li id="nav_menu"><a href="plan.html">Menu</a></li>
+                <li id="nav_floor"><a href="fair.html">Floor Info</a></li>
+                <li id="nav_access"><a href="contact.html">Access</a></li>
+            </ul>
+        </nav>
+        <div id="mainimg">
+            <ul class="bxslider">
+                <li><img src="images/mainimg/mainimg01.gif" /></li>
+                <li><img src="images/mainimg/mainimg02.gif" /></li>
+                <li><img src="images/mainimg/mainimg03.gif" /></li>
+                <li><img src="images/mainimg/mainimg04.gif" /></li>
+                <li><img src="images/mainimg/mainimg05.gif" /></li>
+                <li><img src="images/mainimg/mainimg06.gif" /></li>
+                <li><img src="images/mainimg/mainimg07.gif" /></li>
+                <li><img src="images/mainimg/mainimg08.gif" /></li>
+                <li><img src="images/mainimg/mainimg09.gif" /></li>
+                <li><img src="images/mainimg/mainimg10.gif" /></li>
+                <li><img src="images/mainimg/mainimg11.gif" /></li>
+                <li><img src="images/mainimg/mainimg12.gif" /></li>
+                <li><img src="images/mainimg/mainimg13.gif" /></li>
+                <li><img src="images/mainimg/mainimg14.gif" /></li>
+                <li><img src="images/mainimg/mainimg15.gif" /></li>
+                <li><img src="images/mainimg/mainimg16.gif" /></li>
+                <li><img src="images/mainimg/mainimg17.gif" /></li>
+                <li><img src="images/mainimg/mainimg18.gif" /></li>
+                <li><img src="images/mainimg/mainimg19.gif" /></li>
+                <li><img src="images/mainimg/mainimg20.gif" /></li>
+                <li><img src="images/mainimg/mainimg21.gif" /></li>
+            </ul>
+        </div>
+    </header>
+    <div id="contents">
+       <div id="contentsInner">
+            <p id="illust01"><img src="images/flower_right.gif" width="300" alt="" /></p>
+            <p id="illust02"><img src="images/leaf01.gif" width="140" alt="" /></p>
+            <p id="illust03"><img src="images/flower02.gif" width="145" alt="" /></p>
+            <div id="main">
+                <section id="greeting">
+                    <h2>ごあいさつ</h2>
+                    <p>食べるって楽しいよね」に加え「おいしく食べてきれいに、そして健康に」をテーマに美味しいものは無理にいじらず、
+                    シンプルに素材を生かし、切り方・火の入れ方・塩のあて方までなぜそうするのかを考え、
+                    今一番理にかなった料理法でトラディショナル（伝統的な）料理を追求していきます。</p>
+                </section>
+                <section id="news">
+                    <h2>Topics</h2>
+                    <ul>
+                        <li><time datetime="2017-04-01">2017年04月01日</time>期間限定！季節のメニュー開始</li>
+                        <li><time datetime="2017-03-14">2017年03月14日</time>ホワイトデープランをご用意しました。</li>
+                        <li><time datetime="2014-02-14">2017年02月14日</time>バレンタインフェア。チョコレート・ケーキサービス！</li>
+                    </ul>
+                </section>
+            </div>
+            <div id="sub">
+                <aside>
+                    <div class="bnr_area">
+                        <a href="guide.html"><img src="images/banner1.gif" alt="ランチコース"></a>
+                    </div>
+                    <div class="bnr_area">
+                        <a href="contact.html"><img src="images/banner2.gif" alt="ディナーコース"></a>
+                    </div>
+                    <div class="bnr_area">
+                        <a href="contact.html"><img src="images/banner3.gif" alt="パーティプラン"></a>
+                    </div>
+                    <div class="bnr_area">
+                        <a href="contact.html"><img src="images/banner4.gif" alt="空間"></a>
+                    </div>
+                    <div class="bnr_area">
+                        <a href="contact.html"><img src="images/banner5.gif" alt="当店への道案内"></a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    </body>
+    <footer>
+        <p id="pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+        <address>Bistro D'arbre 〒150-0022 東京都渋谷区恵比寿南1-4-8 電話 03-3760-0447  定休日:火曜日</address>
+        <p id="copyright"><small>Copyright 2017 Bistro D'arbre All rights reserved.</small></p>
+    </footer>
+</html>
