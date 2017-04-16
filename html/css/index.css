@@ -1,0 +1,48 @@
+.bxslider img {
+  margin: 0 auto;
+  display: block;
+}
+
+#contentsInner {
+  position: relative;
+}
+
+#illust01 {
+  line-height: 0;
+  position: absolute;
+  top: -150px;
+  left: -65px;
+}
+
+#illust02 {
+  line-height: 0;
+  position: absolute;
+  top: -130px;
+  left: 750px;
+}
+
+#illust03 {
+  line-height: 0;
+  position: absolute;
+  top: -150px;
+  left: 850px;
+}
+
+#greeting, #news {
+  padding: 5px 15px;
+}
+
+#news ul li {
+  margin-top: 20px;
+  padding: 0 10px 20px 160px;
+  border-bottom: 1px dotted #333333;
+  text-indent: -160px;
+}
+
+#news li::before {
+  content: "NEW!";
+  font-size: 10px;
+  background-color: #6668ff;
+  color: white;
+  border-radius: 3px;
+}

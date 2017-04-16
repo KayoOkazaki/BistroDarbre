@@ -59,24 +59,24 @@ h2 {
     margin:0 auto 0 auto;
 }
 #contentsInner {position: relative;}
-#illust01 {
-    line-height: 0;
-    position: absolute;
-    top: -150px;
-    left: -65px;
-}
-#illust02 {
-    line-height: 0;
-    position: absolute;
-    top: -130px;
-    left: 750px;
-}
-#illust03 {
-    line-height: 0;
-    position: absolute;
-    top: -150px;
-    left: 850px;
-}
+// #illust01 {
+//     line-height: 0;
+//     position: absolute;
+//     top: -150px;
+//     left: -65px;
+// }
+// #illust02 {
+//     line-height: 0;
+//     position: absolute;
+//     top: -130px;
+//     left: 750px;
+// }
+// #illust03 {
+//     line-height: 0;
+//     position: absolute;
+//     top: -150px;
+//     left: 850px;
+// }
 
 body {
      background-image: url("../images/background.jpg");
@@ -92,20 +92,20 @@ body {
     background-color:#ffe4b5;
     margin-bottom: 30px;
 }
-#greeting,#news {padding:5px 15px; }
-#news ul li {
-    margin-top: 20px;
-    padding: 0 10px 20px 160px;
-    border-bottom: 1px dotted #333333;
-    text-indent: -160px;
-}
-#news li::before {
- content: "NEW!";
- font-size: 10px;
- background-color: #6668ff;
- color: white;
- border-radius: 3px;
-}
+// #greeting,#news {padding:5px 15px; }
+// #news ul li {
+//     margin-top: 20px;
+//     padding: 0 10px 20px 160px;
+//     border-bottom: 1px dotted #333333;
+//     text-indent: -160px;
+// }
+// #news li::before {
+//  content: "NEW!";
+//  font-size: 10px;
+//  background-color: #6668ff;
+//  color: white;
+//  border-radius: 3px;
+// }
 
 
 #sub {
@@ -115,13 +115,13 @@ body {
     margin-bottom: 30px;
 }
 
-// なぜがメディアクエリーが効かない
- @media screen and (max‐width: 1280px) {
-  h1 {color:red;}
- .bxslider img{
-    width:"100%";
- }
-}
+// // なぜがメディアクエリーが効かない
+//  @media screen and (max‐width: 1280px) {
+//   h1 {color:red;}
+//  .bxslider img{
+//     width:"100%";
+//  }
+// }
 
 //************************************************************
 //  footer
