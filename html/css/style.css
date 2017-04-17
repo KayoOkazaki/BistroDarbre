@@ -50,19 +50,19 @@ nav ul li a {
 }
 
 nav ul li#nav_top a {
-  background: url(../images/nav_access_red.png) no-repeat;
+  background: url(../images/nav_top.gif) no-repeat;
 }
 
 nav ul li#nav_menu a {
-  background: url(../images/nav_access_blue.png) no-repeat;
+  background: url(../images/nav_menu.gif) no-repeat;
 }
 
 nav ul li#nav_floor a {
-  background: url(../images/nav_access_blue.png) no-repeat;
+  background: url(../images/nav_floor.gif) no-repeat;
 }
 
 nav ul li#nav_access a {
-  background: url(../images/nav_access_blue.png) no-repeat;
+  background: url(../images/nav_access.gif) no-repeat;
 }
 
 .bxslider img {
