@@ -25,7 +25,7 @@
         });
     </script>
 </head>
-<body>
+<body id="index">
     <header id="top">
         <!-- <h1>BistroDarbre</h1> -->
         <div class="logo"><a href="index.html"><img src="images/logo_small.png" alt="bistrodarbre"></a></div>
@@ -33,14 +33,14 @@
         <!-- <div class="tel"><a href="tel:0312345678">03-1234-5678</a></div> -->
         <div class="resavation">
             <div class="tel">☎ 03-3760-0447</div>
-            <div class="mail"><img src="images/mail.gif" alt="web予約フォームはこちら"></div>
+            <div class="mail"><a href="resavation.html"><img src="images/mail.gif" alt="web予約フォームはこちら"></a></div>
         </div>
         <nav>
             <ul>
-                <li id="nav_top"><a href="index.html">Top</a></li>
+                <li id="nav_top"><a href="">Top</a></li>
                 <li id="nav_menu"><a href="menu.html">Menu</a></li>
-                <li id="nav_floor"><a href="polisy.html">Floor Info</a></li>
-                <li id="nav_access"><a href="info.html">Access</a></li>
+                <li id="nav_polisy"><a href="polisy.html">Polisy</a></li>
+                <li id="nav_info"><a href="info.html">About D'arbre</a></li>
             </ul>
         </nav>
         <div id="mainimg">
@@ -71,9 +71,9 @@
     </header>
     <div id="contents">
        <div id="contentsInner">
-            <p id="illust01"><img src="images/flower_right.gif" width="300" alt="" /></p>
+<!--             <p id="illust01"><img src="images/flower_right.gif" width="300" alt="" /></p>
             <p id="illust02"><img src="images/leaf01.gif" width="140" alt="" /></p>
-            <p id="illust03"><img src="images/flower02.gif" width="145" alt="" /></p>
+            <p id="illust03"><img src="images/flower02.gif" width="145" alt="" /></p> -->
             <div id="main">
                 <section id="greeting">
                     <h1>ごあいさつ</h1>
@@ -82,12 +82,42 @@
                     「美味しい料理を食べに行くか」という感じで、気軽に普段使いしてください。</p>
                 </section>
                 <section id="news">
-                    <h2>Topics</h2>
+                    <h2>Darbreからのお知らせ</h2>
                     <ul>
                         <li><time datetime="2017-04-01">2017年04月01日</time>期間限定！季節のメニュー開始</li>
                         <li><time datetime="2017-03-14">2017年03月14日</time>ホワイトデープランをご用意しました。</li>
                         <li><time datetime="2014-02-14">2017年02月14日</time>バレンタインフェア。チョコレート・ケーキサービス！</li>
                     </ul>
+                    <h2>facebook</h2>
+                    <div>
+                        <img src="images/facebook_img.png" alt="">
+                    </div>
+                </section>
+                <section id="partyroom">
+                    <h2>Party Room</h2>
+                        <div class="container">
+                            <div class="strings">
+                                <h3>結婚式二次会・パーティーにおすすめ</h3>
+                                <p>50名以上で店全体の貸切に、20名で利用する際は、2階のフロアを貸切で利用することができます。女子会や同窓会、誕生日などの各種パーティーに。ボリュームのあるコース料理も用意されています。</p>
+                                <a href="menu.html#party">コースメニュー詳細こちら</a>
+                            </div>
+                            <div class="image">
+                                <img src="images/photo/party_room.jpg" alt="">
+                            </div>
+                        </div>
+                </section>
+                <section id="birthday">
+                    <h2>For Birthday お誕生日の方へ</h2>
+                        <div class="container">
+                            <div class="strings">
+                                <h3>記念日・お誕生日の方にはバースデーケーキ！</h3>
+                                <p>メニューにはありませんが、誕生日や記念日で利用する場合には、事前に予約して頂ければメッセージ入りの『バースデー・アニバーサリープレート』を用意いたします。サプライズ演出にも最適。喜ばれること、間違いありません。</p>
+                                <a href="resavation.html">ディナーの予約はこちら</a>
+                            </div>
+                            <div class="image">
+                                <img src="images/photo/birthday.jpg" alt="">
+                            </div>
+                        </div>
                 </section>
             </div>
             <div id="sub">
@@ -102,10 +132,10 @@
                         <a href="menu.html#party"><img src="images/banner3.gif" alt="パーティプラン"></a>
                     </div>
                     <div class="bnr_area">
-                        <a href="floor.html#space"><img src="images/banner4.gif" alt="空間"></a>
+                        <a href="info.html#floorImg"><img src="images/banner4.gif" alt="空間"></a>
                     </div>
                     <div class="bnr_area">
-                        <a href="access.html#map"><img src="images/banner5.gif" alt="当店への道案内"></a>
+                        <a href="info.html#map"><img src="images/banner5.gif" alt="当店への道案内"></a>
                     </div>
                 </aside>
             </div>

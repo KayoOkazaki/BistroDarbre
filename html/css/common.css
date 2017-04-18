@@ -14,3 +14,22 @@ p {
 img {
   border: 0;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table caption {
+  overflow: hidden;
+  text-align: left;
+}
+
+table caption p {
+  margin-bottom: 30px;
+}
+
+table th, table td {
+  padding: 15px;
+  border: 1px solid #775644;
+}

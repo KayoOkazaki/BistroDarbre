@@ -3,6 +3,22 @@
   display: block;
 }
 
+.strings {
+  float: left;
+  width: 65%;
+}
+
+.image img {
+  float: right;
+  width: 30%;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
 #contentsInner {
   position: relative;
 }

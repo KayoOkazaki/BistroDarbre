@@ -11,3 +11,24 @@ p {
 img {
     border: 0;
 }
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table caption {
+    overflow: hidden;
+    text-align: left;
+}
+table caption p {
+    margin-bottom: 30px;
+}
+table th, table td {
+    padding: 15px;
+    border: 1px solid #775644;
+}
+// table tr th:first-child {
+//     width: 30%;
+// }
+// table tr td:nth-child(2), table tr td:nth-child(3) {
+//     text-align: center;
+// }

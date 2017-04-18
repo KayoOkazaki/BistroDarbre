@@ -63,17 +63,25 @@ nav ul li#nav_menu a {
   background: url(../images/navbtn02.gif) no-repeat;
 }
 
-nav ul li#nav_floor a {
+nav ul li#nav_polisy a {
   background: url(../images/navbtn03.gif) no-repeat;
 }
 
-nav ul li#nav_access a {
+nav ul li#nav_info a {
   background: url(../images/navbtn04.gif) no-repeat;
 }
 
 .bxslider img {
   margin: 0 auto;
   display: block;
+}
+
+#index #nav_top a, #menu #nav_menu a, #polisy #nav_polisy a, #info #nav_info a, nav ul li a:hover {
+  background-position: 0 -60px;
+}
+
+h1 {
+  text-align: center;
 }
 
 h2 {

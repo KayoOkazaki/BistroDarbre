@@ -1,0 +1,22 @@
+#floorImg div {
+  width: 652px;
+  margin: 0 auto 0 auto;
+  width: 60%;
+}
+
+#map img {
+  width: 100%;
+}
+
+th.thead01 {
+  width: 14%;
+}
+
+th.thead02 {
+  width: 14%;
+}
+
+caption {
+  font-weight: bold;
+  font-size: 18px;
+}
