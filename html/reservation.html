@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Bistro D'arbre|Web予約フォーム">
+        <meta name="keywords" content="Bistro D’arbre・ダルブル,恵比寿,ランチ,ランチコース,ディナーコース,パーティプラン,ソムリエ,ワイン,ビストロ,南仏料理,カスレ,飲み放題コース,ベジタリアンメニュー,健康・美容メニュー,焼酎あり,カクテルあり,こだわりのワイン,ワインリスト">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Web予約フォーム</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/reservation.css">
+        <!-- <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)"> -->
+        <link href="css/jquery.bxslider.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="index.html"><img src="images/logo_small.png" alt="bistrodarbre"></a></div>
+            <div class="tel">☎ 03-3760-0447</div>
+        </header>
+        <div id="contents">
+            <div id="main">
+                <article id="intro">
+                    <h1>ご予約・問い合わせフォーム</h1>
+                    <p>ご予約またはお問合せ内容を入力頂きましたら<br>
+                        「送信確認ボタン」をクリックしてください。</p>
+                </article>
+                <form action="#">
+                    <table>
+                        <tr><th>ご用件：</th>
+                            <td><label><input type="radio" name="kind" value="reserve" checked>ご予約</label>
+                                <label><input type="radio" name="kind" value="inquiry">お問合せ</label></td></tr>
+                        <tr><th>お名前：</th>
+                            <td><input type="text" name="name" placeholder="（必須）"></td></tr>
+                        <tr><th>フリガナ：</th>
+                            <td><input type="text" name="kana" placeholder="（必須）"></td></tr>
+                        <tr><th>電話番号：</th>
+                            <td><input type="tel" name="telno" placeholder=""></td></tr>
+                        <tr><th>E-mail：</th>
+                            <td><input type="email" name="mail" placeholder="（必須）"></td></tr>
+                        <tr><th>E-mail(確認用)：</th>
+                            <td><input type="email" name="mail" placeholder="（必須）"></td></tr>
+                        <tr><th>ご希望日時</th>
+                            <td><input type="datetime-local" name="datetime" placeholder=""></td></tr>
+                        <tr><th>お問合せ</th>
+                            <td><textarea name="message" rows="10" cols="40" placeholder="(必須)"></textarea></td></tr>
+                        <tr><th>その他・備考</th>
+                            <td><textarea name="remarks" rows="10" cols="40" placeholder=""></textarea></td></tr>
+                        <tr><td colspan="2"><input type="submit" value="送信"></td></tr>
+                    </table>
+                </form>
+            </div>
+            <div id="sub">
+                <aside>
+                    <div class="bnr_area">
+                        <a href="menu.html#lunch"><img src="images/banner1.gif" alt="ランチコース"></a>
+                    </div>
+                    <div class="bnr_area">
+                        <a href="menu.html#dinner"><img src="images/banner2.gif" alt="ディナーコース"></a>
+                    </div>
+                    <div class="bnr_area">
+                        <a href="menu.html#party"><img src="images/banner3.gif" alt="パーティプラン"></a>
+                    </div>
+                    <div class="bnr_area">
+                        <a href="info.html#floorImg"><img src="images/banner4.gif" alt="空間"></a>
+                    </div>
+                    <div class="bnr_area">
+                        <a href="info.html#map"><img src="images/banner5.gif" alt="当店への道案内"></a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p id="pagetop"><a href="#top">ページの先頭へ戻る</a></p>
+        <address>Bistro D'arbre 〒150-0022 東京都渋谷区恵比寿南1-4-8 電話 03-3760-0447  定休日:火曜日</address>
+        <p id="copyright"><small>Copyright 2017 Bistro D'arbre All rights reserved.</small></p>
+    </footer>
+</html>

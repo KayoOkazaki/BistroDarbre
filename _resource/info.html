@@ -10,9 +10,20 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/colorbox/colorbox.css" />
     <!-- <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)"> -->
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/colorbox/jquery.colorbox.js"></script>
+    <script>
+        $(document).ready(function(){
+            //Examples of how to assign the Colorbox event to elements
+            $(".group1").colorbox({rel:'group1'});
+            // $(".group2").colorbox({rel:'group2', transition:"fade"});
+            // $(".group3").colorbox({rel:'group3', transition:"none", width:"75%", height:"75%"});
+            // $(".group4").colorbox({rel:'group4', slideshow:true});
+        });
+    </script>
 </head>
 <body id="info">
     <header>
@@ -45,6 +56,8 @@
                         <p>爽やかな気分で食事ができるテラス席は、ガラス天井になっているので雨でも心配がありません。冬はストーブ、春は自然な風、初夏～夏は大きな扇風機が季節感を演出。1組様一匹までペットの同伴が可能です。</p>
                         <div>
                             <img src="images/room.png" alt="">
+                            <a class="group1" href="images/photo/floor/room01.jpg" title="テラス"><img id="c01" src="images/camera.png" alt=""></a>
+                            <a class="group1" href="images/photo/floor/room02.jpg" title="カウンター"><img id="c02" src="images/camera.png" alt=""></a>
                         </div>
                 </section>
                 <section id="map">
@@ -52,7 +65,7 @@
                         <p>JR山手線 恵比寿駅 徒歩5分 東京メトロ日比谷線 恵比寿駅 徒歩5分<br>ヒューマックス恵比寿ビル南の道を西へ進んだところです。</p>
                         <table>
                             <caption>店舗情報</caption>
-                            <tr><th colspan="3">ビストロ・ダルブル （Bistro D’arbre）　定休日：火曜日</th></tr>
+                            <tr><th colspan="3">ビストロ・ダルブル 恵比寿店 （Bistro D’arbre）　定休日：火曜日</th></tr>
                             <tr><th class="thead01">住所</th><td colspan="2">〒150-0022 東京都渋谷区恵比寿南1-4-8</td></tr>
                             <tr><th>電話</th><td colspan="2">03-3760-0447</td></tr>
                             <tr><th rowspan="2">営業時間</th><th class="thead02">ランチ</th><td>〈金〉12:00〜14:00 (last order)<br>〈土･日･祝〉12:00～14:30 (last order)</td></tr>
