@@ -2,12 +2,11 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Bistro D'arbre|Web予約フォーム">
+    <meta name="description" content="Bistro D'arbreは恵比寿にある温かい雰囲気で気軽に楽しめるフランス料理店。本格コースメニューからワインと相性抜群のアラカルトメニューを多数ご用意しております。">
         <meta name="keywords" content="Bistro D’arbre・ダルブル,恵比寿,ランチ,ランチコース,ディナーコース,パーティプラン,ソムリエ,ワイン,ビストロ,南仏料理,カスレ,飲み放題コース,ベジタリアンメニュー,健康・美容メニュー,焼酎あり,カクテルあり,こだわりのワイン,ワインリスト">
         <meta name="format-detection" content="telephone=no">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <title>Web予約フォーム</title>
-
+        <title>Web予約フォーム | D'arbre</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/reservation.css">
         <!-- <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)"> -->
@@ -23,8 +22,15 @@
             <div id="main">
                 <article id="intro">
                     <h1>ご予約・問い合わせフォーム</h1>
-                    <p>ご予約またはお問合せ内容を入力頂きましたら<br>
+                    <h2>ご予約にあたってのお願い</h2>
+                    <p>以下内容をご確認頂けましたらお問合せ内容を入力し<br>
                         「送信確認ボタン」をクリックしてください。</p>
+                    <ul>
+                        <li>こちらの予約システムでは、席種のご指定はできません。あらかじめご了承ください。</li>
+                        <li>6名様以上のご予約は、店舗に直接お問い合わせ下さい。</li>
+                        <li>個室での利用を希望される場合は、個室料金としてお1人様500円(税込)を頂戴いたします。</li>
+                        <li>個室利用は7名様以上からのご予約となりますのでご了承ください。</li>
+                    </ul>
                 </article>
                 <form action="#">
                     <table>
@@ -36,16 +42,27 @@
                         <tr><th>フリガナ：</th>
                             <td><input type="text" name="kana" placeholder="（必須）"></td></tr>
                         <tr><th>電話番号：</th>
-                            <td><input type="tel" name="telno" placeholder=""></td></tr>
+                            <td><input type="tel" name="telno" placeholder="（必須）"></td></tr>
                         <tr><th>E-mail：</th>
                             <td><input type="email" name="mail" placeholder="（必須）"></td></tr>
                         <tr><th>E-mail(確認用)：</th>
                             <td><input type="email" name="mail" placeholder="（必須）"></td></tr>
-                        <tr><th>ご希望日時</th>
+                        <tr><th>ご希望日時 :</th>
                             <td><input type="datetime-local" name="datetime" placeholder=""></td></tr>
-                        <tr><th>お問合せ</th>
+                        <tr><th>人数 :</th>
+                            <td>
+                                <select name="number">
+                                    <option value="0">0名</option>
+                                    <option value="1" selected="selected">1名</option>
+                                    <option value="2">2名</option>
+                                    <option value="3">3名</option>
+                                    <option value="4">4名</option>
+                                    <option value="5">5名</option>
+                                </select>
+                            </td></tr>
+                        <tr><th>お問合せ:</th>
                             <td><textarea name="message" rows="10" cols="40" placeholder="(必須)"></textarea></td></tr>
-                        <tr><th>その他・備考</th>
+                        <tr><th>その他・備考:</th>
                             <td><textarea name="remarks" rows="10" cols="40" placeholder=""></textarea></td></tr>
                         <tr><td colspan="2"><input type="submit" value="送信"></td></tr>
                     </table>
@@ -66,7 +83,7 @@
                         <a href="info.html#floorImg"><img src="images/banner4.gif" alt="空間"></a>
                     </div>
                     <div class="bnr_area">
-                        <a href="info.html#map"><img src="images/banner5.gif" alt="当店への道案内"></a>
+                        <a href="info.html#access"><img src="images/banner5.gif" alt="当店への道案内"></a>
                     </div>
                 </aside>
             </div>

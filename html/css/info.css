@@ -10,8 +10,8 @@
 
 #c01 {
   position: absolute;
-  top: 77%;
-  left: 51%;
+  top: 88%;
+  left: 45%;
 }
 
 #c02 {
@@ -20,7 +20,59 @@
   left: 59%;
 }
 
-#map img {
+#c03 {
+  position: absolute;
+  top: 79%;
+  left: 23%;
+}
+
+#c04 {
+  position: absolute;
+  top: 42%;
+  left: 29%;
+}
+
+#access {
+  position: relative;
+}
+
+#c05 {
+  position: absolute;
+  top: 30%;
+  left: 60%;
+}
+
+#c06 {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+}
+
+#c07 {
+  position: absolute;
+  top: 39%;
+  left: 54%;
+}
+
+#c08 {
+  position: absolute;
+  top: 46%;
+  left: 63%;
+}
+
+#c10 {
+  position: absolute;
+  top: 53%;
+  left: 47%;
+}
+
+#access div {
+  width: 652px;
+  margin: 0 auto 0 auto;
+  width: 100%;
+}
+
+.map {
   width: 100%;
 }
 

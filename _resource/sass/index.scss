@@ -44,8 +44,29 @@
     display:block;
 }
 // 回り込み解除
-.strings {float:left;width:65%;}
-.image img{float:right;width:30%;}
+// .strings {float:left;width:65%;}
+// .image img{float:right;width:30%;}
+.strings1 {
+    float:left;width:50%; background-image:url(../images/bk_green.jpg); color:white;
+    h3{text-align:center;}
+    p{padding:20px;}
+    a{
+        background-color: #FF6600;
+        color: white;
+        border-radius: 3px;}
+}
+.image1 img{float:right;width:50%;}
+
+.strings2 {
+    float:right;width:50%; background-image:url(../images/bk_orange.jpg); color:white;
+    h3{text-align:center;}
+    p{padding:20px;}
+    a{
+        background-color: green;
+        color: white;
+        border-radius: 3px;}
+}
+.image2 img{float:left;width:50%;}
 .container::after {
  content: "";
  display:block;
@@ -108,7 +129,7 @@
 #news li::before {
  content: "NEW!";
  font-size: 10px;
- background-color: #6668ff;
+ background-color: green;
  color: white;
  border-radius: 3px;
 }
