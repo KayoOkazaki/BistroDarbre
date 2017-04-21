@@ -82,7 +82,11 @@ nav ul li#nav_info a {
 }
 
 h1 {
+  background-image: url(../images/square.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
   text-align: center;
+  line-height: 88px;
 }
 
 h2 {

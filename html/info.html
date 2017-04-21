@@ -11,11 +11,27 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/info.css">
     <link rel="stylesheet" href="css/colorbox/colorbox.css" />
-    <!-- <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)"> -->
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)">
     <link href="css/jquery.bxslider.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/colorbox/jquery.colorbox.js"></script>
     <script>
+        //////////////////////////////////////////////////////////////////
+        // レスポンシブWEBデザイン（幅480pxまでのサイズ）
+        //////////////////////////////////////////////////////////////////
+        $(document).ready(function() {
+            var w = $(window).width();
+            var x = 480;
+            if (w <= x) {
+                $('.group1').each(function(index, element){
+                    console.log($(element).attr('href'));
+                    $(element).attr('href', 'images/photo/floor/small/room0' + (index+1) + '.jpg')
+                });
+            }
+        });
+        //////////////////////////////////////////////////////////////////
+        // 写真モーダル表示 colorboxプラグイン
+        //////////////////////////////////////////////////////////////////
         $(document).ready(function(){
             //Examples of how to assign the Colorbox event to elements
             $(".group1").colorbox({rel:'group1'});
@@ -56,7 +72,7 @@
                     <h2>Floor guide フロアガイド</h2>
                         <p>爽やかな気分で食事ができるテラス席は、ガラス天井になっているので雨でも心配がありません。冬はストーブ、春は自然な風、初夏～夏は大きな扇風機が季節感を演出。1組様一匹までペットの同伴が可能です。</p>
                         <div>
-                            <img src="images/room.png" alt="">
+                            <img class="floor" src="images/room.png" alt="">
                             <a class="group1" href="images/photo/floor/room01.jpg" title="テラス"><img id="c01" src="images/camera.png" alt=""></a>
                             <a class="group1" href="images/photo/floor/room02.jpg" title="カウンター"><img id="c02" src="images/camera.png" alt=""></a>
                             <a class="group1" href="images/photo/floor/room03.jpg" title="1F"><img id="c03" src="images/camera.png" alt=""></a>
@@ -72,7 +88,6 @@
                             <a class="group2" href="images/photo/map/map_img02.jpg" title="駅前ロータリー右側を直進"><img id="c06" src="images/camera.png" alt=""></a>
                             <a class="group2" href="images/photo/map/map_img03.jpg" title="恵比寿銀座通りを通過"><img id="c07" src="images/camera.png" alt=""></a>
                             <a class="group2" href="images/photo/map/map_img04.jpg" title="牛タン英司の角の通りを入る"><img id="c08" src="images/camera.png" alt=""></a>
-<!--                             <a class="group2" href="images/photo/map/map_img05.jpg" title="まっすぐ道なりに進む"><img id="c09" src="images/camera.png" alt=""></a> -->
                             <a class="group2" href="images/photo/map/map_img06.jpg" title="到着！"><img id="c10" src="images/camera.png" alt=""></a>
                         </div>
                         <table>

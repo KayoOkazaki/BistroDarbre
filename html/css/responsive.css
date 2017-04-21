@@ -1,0 +1,102 @@
+h1 {
+  line-height: 60px;
+}
+
+header, nav, #mainimg, #contents, footer {
+  width: 451px;
+}
+
+.logo {
+  float: none;
+  margin: 25px 0 0px 160px;
+  position: static;
+}
+
+.logo img {
+  width: 140px;
+}
+
+.tel {
+  float: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #552707;
+  width: 350px;
+  margin: 5px 50px;
+}
+
+.resavation {
+  float: none;
+  margin: 0 75px;
+  width: 50px;
+  font-size: 10px;
+}
+
+nav {
+  position: static;
+  float: none;
+  margin: 20px 65px;
+}
+
+h1 {
+  background-color: red;
+}
+
+#main, #news h2, #news ul li, #fb h2 {
+  width: auto;
+  margin: 0;
+  float: none;
+}
+
+#fb div img {
+  width: 430px;
+}
+
+#mainimg {
+  height: 217px;
+}
+
+#mainimg ul li img {
+  width: 450px;
+}
+
+#illust01 {
+  position: static;
+  display: none;
+}
+
+#illust02 {
+  position: static;
+  display: none;
+}
+
+#illust03 {
+  position: static;
+  display: none;
+}
+
+#news ul li {
+  margin-top: 20px;
+  padding: 0 0 5px 0;
+  text-indent: 0;
+}
+
+#news ul li time {
+  width: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#main {
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+#sub {
+  margin-left: 10px;
+  float: none;
+}
+
+.floor {
+  width: 300px;
+}
