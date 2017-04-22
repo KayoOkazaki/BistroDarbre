@@ -1,44 +1,5 @@
 @charset "utf-8";
 
-//************************************************************
-//  header
-//************************************************************
-// header {
-//      margin: 0 auto 0 auto;
-//      margin-top:10px;
-//      width: 960px;
-// }
-// .logo {float:left; margin:0 10px; }
-// .resavation{float:right; margin:0 10px;}
-// .tel {margin-top:30px; font-size: 30px; font-weight: bold; color:#552707;}
-// nav {
-//     clear:both;
-//      width: 670px;
-//      position: relative;
-//      top: 0;
-//      left: 300px;
-// }
-// nav ul {
-//     margin: 0 0 5px 0;
-//     list-style-type: none;
-//     padding-left: 0;
-//     overflow: hidden;
-// }
-// nav ul li {
-//     width: 160px;
-//     float: left;
-// }
-// nav ul li a {
-//     display: block;
-//     height: 0;
-//     padding-top: 60px;
-//     overflow: hidden;
-// }
-// nav ul li#nav_top a {background: url(../images/nav_access_red.png) no-repeat;}
-// nav ul li#nav_menu a {background: url(../images/nav_access_blue.png) no-repeat;}
-// nav ul li#nav_floor a {background: url(../images/nav_access_blue.png) no-repeat;}
-// nav ul li#nav_access a {background: url(../images/nav_access_blue.png) no-repeat;}
-
 .bxslider img {
     margin: 0 auto;
     display:block;
@@ -47,7 +8,9 @@
 // .strings {float:left;width:65%;}
 // .image img{float:right;width:30%;}
 .strings1 {
-    float:left;width:50%; background-image:url(../images/bk_green.jpg); color:white;
+    float:left;width:50%;
+    background-image:url(../images/bk_green.jpg);
+    color:white;
     h3{text-align:center;}
     p{padding:20px;}
     a{
@@ -58,7 +21,10 @@
 .image1 img{float:right;width:50%;}
 
 .strings2 {
-    float:right;width:50%; background-image:url(../images/bk_orange.jpg); color:white;
+    float:right;
+    width:50%;
+    background-image:url(../images/bk_orange.jpg);
+    color:white;
     h3{text-align:center;}
     p{padding:20px;}
     a{
@@ -67,24 +33,13 @@
         border-radius: 3px;}
 }
 .image2 img{float:left;width:50%;}
+
 .container::after {
  content: "";
  display:block;
  clear:both;
 }
 
-//************************************************************
-//  body
-//************************************************************
-// h2 {
-//     border-left: 10px solid orange;
-//     border-bottom: 3px solid #552707;
-//     padding-left:10px;
-// }
-// #contents {
-//     width: 960px;
-//     margin:0 auto 0 auto;
-// }
 #contentsInner {position: relative;}
 #illust01 {
     line-height: 0;
@@ -105,20 +60,6 @@
     left: 850px;
 }
 
-// body {
-//      background-image: url("../images/background.jpg");
-//      background-repeat: repeat-x;
-//     background-position: center top;
-//     background-color: #ffcb4f;
-// }
-
-// #main {
-//     width:670px;
-//     padding:20px;
-//     float:left;
-//     background-color:#ffe4b5;
-//     margin-bottom: 30px;
-// }
 #greeting,#news {padding:5px 15px; }
 #news ul li {
     margin-top: 20px;
@@ -134,32 +75,4 @@
  border-radius: 3px;
 }
 
-
-// #sub {
-//     width:228px;
-//     float:right;
-//     margin:0 auto 0 auto;
-//     margin-bottom: 30px;
-// }
-
-// // なぜがメディアクエリーが効かない
-//  @media screen and (max‐width: 1280px) {
-//   h1 {color:red;}
-//  .bxslider img{
-//     width:"100%";
-//  }
-// }
-
-//************************************************************
-//  footer
-//************************************************************
-// footer {
-//     background-image: url("../images/footer.png");
-//     background-position: center top;
-//     background-repeat: repeat-x;
-//     margin: 0 auto 0 auto;
-//     text-align: center;
-//     height:120px;
-//     clear:both;
-// }
 

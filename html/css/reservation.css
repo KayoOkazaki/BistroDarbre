@@ -39,3 +39,8 @@ input[type="text"] {
 input[type="textarea"] {
   width: 200px;
 }
+
+#sub {
+  position: fixed;
+  top: 248px;
+}

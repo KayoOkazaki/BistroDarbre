@@ -88,3 +88,8 @@ caption {
   font-weight: bold;
   font-size: 18px;
 }
+
+#sub {
+  position: fixed;
+  top: 248px;
+}

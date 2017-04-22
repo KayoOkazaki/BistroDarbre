@@ -31,10 +31,10 @@ header {
 
 nav {
   clear: both;
-  width: 670px;
+  width: 600px;
   position: relative;
   top: -30px;
-  left: 300px;
+  left: 380px;
 }
 
 nav ul {
@@ -45,8 +45,10 @@ nav ul {
 }
 
 nav ul li {
-  width: 160px;
+  width: 141px;
+  height: 53px;
   float: left;
+  overflow: hidden;
 }
 
 nav ul li a {
@@ -72,13 +74,17 @@ nav ul li#nav_info a {
   background: url(../images/navbtn04.gif) no-repeat;
 }
 
+#nav_top a:hover, #nav_menu a:hover, #nav_polisy a:hover, #nav_info a:hover {
+  background-position: 0 -53px;
+}
+
+#index #nav_top a, #menu #nav_menu a, #polisy #nav_polisy a, #info #nav_info a {
+  background-position: 0 -53px;
+}
+
 .bxslider img {
   margin: 0 auto;
   display: block;
-}
-
-#index #nav_top a, #menu #nav_menu a, #polisy #nav_polisy a, #info #nav_info a, nav ul li a:hover {
-  background-position: 0 -60px;
 }
 
 h1 {
@@ -116,14 +122,14 @@ body {
 #main {
   width: 670px;
   padding: 20px;
-  float: left;
+  float: right;
   background-color: #ffe4b5;
   margin-bottom: 30px;
 }
 
 #sub {
   width: 228px;
-  float: right;
+  float: left;
   margin: 0 auto 0 auto;
   margin-bottom: 30px;
 }
