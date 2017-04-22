@@ -9,16 +9,25 @@
         <title>Web予約フォーム | D'arbre</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/reservation.css">
-        <!-- <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)"> -->
-        <link href="css/jquery.bxslider.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)">
+        <link rel="icon" type="image/ico" href="images/favicon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     </head>
     <body>
-        <header>
+        <header id="top">
             <div class="logo"><a href="index.html"><img src="images/logo_small.png" alt="bistrodarbre"></a></div>
-            <div class="tel">☎ 03-3760-0447</div>
+            <div class="addr">
+                <p>Bistro D'arbre (ビストロ・ダルブル) 恵比寿店<br>
+                ☎ 03-3760-0447<br>
+                〒150-0022 東京都渋谷区恵比寿南1-4-8　定休日:火曜日</p>
+            </div>
         </header>
         <div id="contents">
+           <!-- 戻るボタン -->
+           <div id="page-top">
+                <a id="move-page-top" href="#top"><i class="fa fa-chevron-circle-up fa-5x"></i></a>
+           </div>
             <div id="main">
                 <article id="intro">
                     <h1>ご予約・問い合わせフォーム</h1>
@@ -80,10 +89,13 @@
                         <a href="menu.html#party"><img src="images/banner3.gif" alt="パーティプラン"></a>
                     </div>
                     <div class="bnr_area">
-                        <a href="info.html#floorImg"><img src="images/banner4.gif" alt="空間"></a>
+                        <a href="menu.html#winelist_glass"><img src="images/banner4.gif" alt="ワインリスト"></a>
                     </div>
                     <div class="bnr_area">
-                        <a href="info.html#access"><img src="images/banner5.gif" alt="当店への道案内"></a>
+                        <a href="info.html#floorImg"><img src="images/banner5.gif" alt="空間"></a>
+                    </div>
+                    <div class="bnr_area">
+                        <a href="info.html#access"><img src="images/banner6.gif" alt="当店への道案内"></a>
                     </div>
                 </aside>
             </div>

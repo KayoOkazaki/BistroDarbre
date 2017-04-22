@@ -1,13 +1,15 @@
 @charset "utf-8";
-h1{
-    line-height:60px;
-}
-header, nav, #mainimg, #contents, footer {
-    width: 451px;
- }
+h1{ line-height:60px; font-size:22px;}
+h2{font-size:18px;}
+h3{font-size:14px;}
+table tr {font-size:12px;}
+ul li {font-size:12px;}
+dl dt, dl dd {font-size:12px;}
+p {font-size:12px;}
+header, nav, #mainimg, #contents, footer { width: 410px;}
 .logo {
     float:none;
-     margin:25px 0 0px 160px;
+    margin:25px 0 0px 160px;
     position: static;
  }
  .logo img {width:140px;}
@@ -27,44 +29,14 @@ header, nav, #mainimg, #contents, footer {
 }
 
 nav {
-    // clear:both;
-     // width: 670px;
      position: static;float:none;
      margin:20px 65px;
  }
-// nav ul {
-//     margin: 0 0 5px 0;
-//     list-style-type: none;
-//     padding-left: 0;
-//     overflow: hidden;
-// }
-nav ul li {
-    // width: 160px;
-    // float: left;
-}
-// nav ul li a {
-//     display: block;
-//     height: 0;
-//     padding-top: 60px;
-//     overflow: hidden;
-// }
 
-///////////////////////////////////////////////
-// ナビゲーション中央配置 //
-///////////////////////////////////////////////
-// .navbar {
-//     display:table;
-//     margin:0 auto;
-// }
-// .navbar li {
-//     display:table-cell;
-// }
-// .navbar li + li {
-//     padding-left:0px;
-// }
-///////////////////////////////////////////////
 
-h1{background-color:red;}
+////////////////////////////////////////////
+//index
+////////////////////////////////////////////
 #main, #news h2, #news ul li, #fb h2{
     width: auto;
     margin: 0;
@@ -78,21 +50,22 @@ h1{background-color:red;}
 #mainimg ul li img {
     width: 450px;
 }
-////////////////////////////////////////////
-//index
-////////////////////////////////////////////
 #illust01 {position:static; display:none;}
 #illust02 {position:static; display:none;}
 #illust03 {position:static; display:none;}
 #news ul li {
-    margin-top: 20px;
-    padding: 0 0 5px 0;
+    margin-top: 5px;
+    padding: 0 0 0 0;
     text-indent: 0;
 }
 #news ul li time {
     width: auto;
     display: block;
     margin-bottom: 10px;
+}
+.strings1,.strings2 {float:none; display: block; width: auto;
+}
+.image1,.image2{float:none; display: block; width: 100%;
 }
 ////////////////////////////////////////////
 
@@ -102,10 +75,64 @@ h1{background-color:red;}
 }
 #sub {
     margin-left: 10px;
+    position:static;
     float: none;
 }
-
 ////////////////////////////////////////////
 //info
 ////////////////////////////////////////////
 .floor{width:300px;}
+#c01,#c02,#c03,#c04,#c05,#c06,#c07,#c08,#c09 {width:23px;}
+#c01 {
+    position:absolute;
+    top:89%;
+    left:55%;
+}
+#c02 {
+    position:absolute;
+    top:89%;
+    left:69%;
+}
+#c03 {
+    position:absolute;
+    top:79%;
+    left:28%;
+}
+#c04 {
+    position:absolute;
+    top:45%;
+    left:32%;
+}
+#c05 {
+    position:absolute;
+    top:24%;
+    left:60%;
+}
+#c06 {
+    position:absolute;
+    top:25%;
+    left:50%;
+}
+#c07 {
+    position:absolute;
+    top:30%;
+    left:54%;
+}
+#c08 {
+    position:absolute;
+    top:34%;
+    left:65%;
+}
+#c09 {
+    position:absolute;
+    top:38%;
+    left:47%;
+}
+
+////////////////////////////////////////////
+//reservation
+////////////////////////////////////////////
+.addr{
+    float: none;
+    p{font-size:18px; margin:5px;}
+}

@@ -9,6 +9,7 @@ header {
      margin-top:10px;
      width: 960px;
 }
+
 .logo {float:left; margin:0 10px; }
 .resavation{float:right; margin:0 10px;}
 .tel {margin-top:30px; font-size: 30px; font-weight: bold; color:#552707;}
@@ -33,14 +34,14 @@ nav ul {
 }
 nav ul li {
     width: 141px;
-    height:53px;
+    height:75px;
     float: left;
     overflow: hidden;
 }
 nav ul li a {
     display: block;
     height: 0;  //li要素の高さ分だけを表示するためにa要素の高さを0にする
-    padding-top: 60px;
+    padding-top: 75px;
     overflow: hidden;
 }
 // nav ul li#nav_top a {background: url(../images/nav_sample01.gif) no-repeat;}
@@ -49,13 +50,12 @@ nav ul li#nav_menu a {background: url(../images/navbtn02.gif) no-repeat;}
 nav ul li#nav_polisy a {background: url(../images/navbtn03.gif) no-repeat;}
 nav ul li#nav_info a {background: url(../images/navbtn04.gif) no-repeat;}
 
-
 #nav_top a:hover, #nav_menu a:hover, #nav_polisy a:hover, #nav_info a:hover{
-    background-position: 0 -53px;
+    background-position: 0 -75px;
 }
 
 #index #nav_top a, #menu #nav_menu a, #polisy #nav_polisy a, #info #nav_info a {
-    background-position: 0 -53px;
+    background-position: 0 -75px;
 }
 
 .bxslider img {
@@ -69,17 +69,14 @@ h1{
     background-image: url(../images/square.gif);
     background-repeat:no-repeat;
     background-size:contain;
-    //横揃え
-    text-align:center;
-    //縦揃え
-     line-height:88px;
+    text-align:center; //横揃え
+     line-height:88px; //縦揃え
 }
 h2 {
     border-left: 10px solid orange;
     border-bottom: 3px solid #552707;
     padding-left:10px;
-    margin-top:50px;
-    // font-family: 'Pacifico', cursive;
+    margin-top:40px;
     font-family: 'Dancing Script', cursive;
 }
 #contents {
@@ -87,30 +84,33 @@ h2 {
     margin:0 auto 0 auto;
 }
 #contentsInner {position: relative;}
-// #illust01 {
-//     line-height: 0;
-//     position: absolute;
-//     top: -150px;
-//     left: -65px;
-// }
-// #illust02 {
-//     line-height: 0;
-//     position: absolute;
-//     top: -130px;
-//     left: 750px;
-// }
-// #illust03 {
-//     line-height: 0;
-//     position: absolute;
-//     top: -150px;
-//     left: 850px;
-// }
 
 body {
      background-image: url("../images/background.jpg");
      background-repeat: repeat-x;
     background-position: center top;
     background-color: #ffcb4f;
+}
+/////////////////////////////
+//戻るボタン
+/////////////////////////////
+#page-top {
+    display:none;
+    position:fixed;
+    right:30px;
+    bottom:30px;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+#move-page-top {
+color:green;
+text-decoration:none;
+display:block;
+cursor:pointer;
+}
+#move-page-top:hover {
+color:#6e360b;
 }
 
 //************************************************************
@@ -147,12 +147,10 @@ body {
 }
 
 // // なぜがメディアクエリーが効かない
-//  @media screen and (max‐width: 1280px) {
-//   h1 {color:red;}
-//  .bxslider img{
-//     width:"100%";
+//  @media screen and (max‐width: 480px) {
+//   h2 {color:red;}
 //  }
-// }
+
 
 //************************************************************
 //  sub
@@ -178,224 +176,3 @@ footer {
     clear:both;
 }
 
-
-
-/*****************************************************************
- CSS for Jquery of parallax
-/*****************************************************************
-//***************
- * Intro Panel *
- ***************/
-#header {
-    color : #666;
-}
-
-#header #logo {
-    margin : 20px 0 50px 0;
-}
-
-#header h2 {
-    font-family: "Caecilia-Roman", Verdana, sans-serif;
-}
-
-#header h3 {
-    background-color: #eee;
-}
-
-#header .story {
-    width         : 850px;
-    padding-right : 0px;
-}
-
-#header p {
-    width     : 800px;
-    font-size : 16px;
-}
-
-#header ul li {
-    font-size : 16px;
-    margin    : 16px 0 32px;
-    border-bottom: 1px dotted #ccc;
-    float: none;
-    text-align: left;
-    width: 600px;
-}
-
-#header ul {
-    padding : 0px;
-    overflow: hidden;
-}
-
-#header strong {
-    font-weight: bold;
-    font-size: 21px;
-}
-
-/***************
- * Intel Panel *
- ***************/
-#second {
-    color      : #FFF;
-    background : #022639;
-}
-
-#second p {
-    font-size: 16px;
-}
-
-/*********************
- * Ultrabook Project *
- *********************/
-#third {
-    color      : #CCC;
-    background : #000;
-}
-
-#third .bg {
-    left  : auto;
-    right : 0px;
-}
-
-#third ul li {
-    margin    : 16px 0 32px;
-    padding-bottom: 16px;
-    border-bottom: 1px dotted #fff;
-    text-align: left;
-    width: 600px;
-}
-
-#third strong {
-    font-weight: bold;
-    font-size: 21px;
-}
-
-/**************
- * Bing Panel *
- **************/
-#fourth {
-    color       : #FFF;
-    text-shadow : 1px 1px 1px #000;
-    background  : #C9BC33;
-}
-
-#fourth .logo {
-    position : absolute;
-    right    : 20%;
-    bottom   : 50%;
-}
-
-#fourth .logo.start {
-    bottom : 190%;
-}
-
-#fourth .logo.end {
-    bottom : -90%;
-}
-
-#fourth ul li {
-    margin    : 16px 0 32px;
-    padding-bottom: 16px;
-    border-bottom: 1px dotted #fff;
-    text-align: left;
-    width: 600px;
-}
-
-#fourth strong {
-    font-weight: bold;
-    font-size: 21px;
-}
-
-
-/**************
- * photo slide *
- **************/
-#photoslide {
-    color      : #CCC;
-    background : #000;
-}
-
-#photoslide .logo {
-    position : absolute;
-    right    : 0%;
-    bottom   : 30%;
-}
-
-#photoslide .logo.start {
-    bottom : 170%;
-}
-
-#photoslide .logo.end {
-    bottom : -210%;
-}
-
-#photoslide .box {
-    background    : #000;
-    opacity       : .7;
-    border-radius : 10px;
-    position      : absolute;
-    top           : -10px;
-    right         : 440px;
-    bottom        : -10px;
-    left          : -10px;
-    z-index       : -1;
-}
-
-#photoslide ul.slide {
-    display     : block;
-    position    : absolute;
-    white-space : nowrap;
-    left        : -1426px;
-}
-
-#photoslide ul.slide.start {
-    left : -1425px;
-}
-
-#photoslide ul.slide li {
-    display : inline;
-}
-
-#photoslide ul.slide-1.start { opacity : 0; }
-#photoslide ul.slide-2.start { opacity : 0; }
-#photoslide ul.slide-3.start { opacity : 0; }
-
-#photoslide ul.slide-1 {
-    bottom : 0px;
-}
-
-#photoslide ul.slide-2, #photoslide ul.slide-2.to {
-    bottom : 176px;
-    left   : -1425px;
-}
-
-#photoslide ul.slide-2.start {
-    left : -1426px;
-}
-
-#photoslide ul.slide-3 {
-    bottom : 352px;
-}
-
-
-#photoslide ul.slide-1.to, #photoslide ul.slide-3.to {
-    left : -1425px;
-}
-
-#photoslide ul.slide-1.end {
-    right : 0px;
-    left  : auto;
-}
-
-#photoslide ul.slide-3.end {
-    right : 1200px;
-    left  : auto;
-}
-
-
-#photoslide ul.slide-2.to {
-    right : 0px;
-}
-
-#photoslide ul.slide-2.end {
-    left : 200px;
-}

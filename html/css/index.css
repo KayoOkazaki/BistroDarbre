@@ -38,6 +38,7 @@
 
 .strings2 h3 {
   text-align: center;
+  margin-bottom: 0px;
 }
 
 .strings2 p {
@@ -68,22 +69,15 @@
 #illust01 {
   line-height: 0;
   position: absolute;
-  top: -150px;
-  left: -65px;
-}
-
-#illust02 {
-  line-height: 0;
-  position: absolute;
   top: -130px;
-  left: 750px;
+  left: -80px;
 }
 
 #illust03 {
   line-height: 0;
   position: absolute;
-  top: -150px;
-  left: 850px;
+  top: -140px;
+  left: 730px;
 }
 
 #greeting, #news {
@@ -92,9 +86,10 @@
 
 #news ul li {
   margin-top: 20px;
-  padding: 0 10px 20px 160px;
+  padding: 0 10px 10px 160px;
   border-bottom: 1px dotted #333333;
   text-indent: -160px;
+  list-style-type: none;
 }
 
 #news li::before {

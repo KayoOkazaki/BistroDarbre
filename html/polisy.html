@@ -9,13 +9,25 @@
     <title>シェフ紹介 | D'arbre</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/polisy.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)"> -->
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/responsive.css" media="screen and (max-width: 480px)">
+    <link rel="icon" type="image/ico" href="images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        $(window).scroll(function(){
+             if ($(window).scrollTop() > 500){
+                $("#page-top").fadeIn();
+             }else{
+                $("#page-top").fadeOut();
+             }
+        });
+        $("#move-page-top").click(function(){
+             $("html,body").animate({scrollTop: 0}, 350);
+        });
+    </script>
 </head>
 <body id="polisy">
-    <header>
-        <!-- <h1>BistroDarbre</h1> -->
+    <header id="top">
         <div class="logo"><a href="index.html"><img src="images/logo_small.png" alt="bistrodarbre"></a></div>
         <!-- スマホの時だけ -->
         <!-- <div class="tel"><a href="tel:0312345678">03-1234-5678</a></div> -->
@@ -25,22 +37,25 @@
         </div>
         <nav>
             <ul>
-                <li id="nav_top"><a href="index.html">Top</a></li>
-                <li id="nav_menu"><a href="menu.html">Menu</a></li>
-                <li id="nav_polisy"><a href="polisy.html">Polisy</a></li>
-                <li id="nav_info"><a href="info.html">About D'arbre</a></li>
+                <li id="nav_top"><a href="index.html#top">Top</a></li>
+                <li id="nav_menu"><a href="menu.html#top">Menu</a></li>
+                <li id="nav_polisy"><a href="polisy.html#top">Polisy</a></li>
+                <li id="nav_info"><a href="info.html#top">About D'arbre</a></li>
             </ul>
         </nav>
     </header>
     <div id="contents">
+       <!-- 戻るボタン -->
+       <div id="page-top">
+            <a id="move-page-top" href="#top"><i class="fa fa-chevron-circle-up fa-5x"></i></a>
+       </div>
        <div id="contentsInner">
             <div id="main">
                 <section id="intro01">
                     <h1>シェフのこだわり</h1>
                     <p>「食べるって楽しいよね」に加え「おいしく食べてきれいに、そして健康に」をテーマに美味しいものは無理にいじらず、
                     シンプルに素材を生かし、切り方・火の入れ方・塩のあて方までなぜそうするのかを考え、
-                    今一番理にかなった料理法でトラディショナル（伝統的な）料理を追求していきます。</p>
-                </section>
+                    今一番理にかなった料理法でトラディショナル（伝統的な）料理を追求していきます。</p>                </section>
                 <section id="intro02">
                     <div class="container">
                         <h2>Chef introduction シェフ紹介</h2>
@@ -56,7 +71,7 @@
                 <section id="recomend">
                     <div class="container">
                         <h2>Recommended menu お勧めのメニュー</h2>
-                        <p>素材にこだわった、体に優しいヘルシーメニューを取り揃えております。お料理のオイルは抗酸化成分が豊富なコメ油を使い、ドレッシングにはオメガ3を多く含む有機亜麻仁油と黒酢を独自にブレンドしております。</p>
+                        <!-- <p>素材にこだわった、体に優しいヘルシーメニューを取り揃えております。お料理のオイルは抗酸化成分が豊富なコメ油を使い、ドレッシングにはオメガ3を多く含む有機亜麻仁油と黒酢を独自にブレンドしております。</p> -->
                         <div class="strings01">
                             <h3>『牛ホホ肉の赤ワイン煮込み』</h3>
                             <p>牛ホホ肉を、たっぷりの香味野菜と赤ワインでトロットロになるまでじっくりと煮込み、ワインとブランデーで仕上げております。シャープで、コクとキレがある奥深い味わいをお楽しみいただけます。</p>
@@ -95,11 +110,15 @@
                         <a href="menu.html#party"><img src="images/banner3.gif" alt="パーティプラン"></a>
                     </div>
                     <div class="bnr_area">
-                        <a href="info.html#floorImg"><img src="images/banner4.gif" alt="空間"></a>
+                        <a href="menu.html#winelist_glass"><img src="images/banner4.gif" alt="ワインリスト"></a>
                     </div>
                     <div class="bnr_area">
-                        <a href="info.html#access"><img src="images/banner5.gif" alt="当店への道案内"></a>
+                        <a href="info.html#floorImg"><img src="images/banner5.gif" alt="空間"></a>
                     </div>
+                    <div class="bnr_area">
+                        <a href="info.html#access"><img src="images/banner6.gif" alt="当店への道案内"></a>
+                    </div>
+                </aside>
                 </aside>
             </div>
         </div>

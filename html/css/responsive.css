@@ -1,9 +1,34 @@
 h1 {
   line-height: 60px;
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+table tr {
+  font-size: 12px;
+}
+
+ul li {
+  font-size: 12px;
+}
+
+dl dt, dl dd {
+  font-size: 12px;
+}
+
+p {
+  font-size: 12px;
 }
 
 header, nav, #mainimg, #contents, footer {
-  width: 451px;
+  width: 410px;
 }
 
 .logo {
@@ -36,10 +61,6 @@ nav {
   position: static;
   float: none;
   margin: 20px 65px;
-}
-
-h1 {
-  background-color: red;
 }
 
 #main, #news h2, #news ul li, #fb h2 {
@@ -76,8 +97,8 @@ h1 {
 }
 
 #news ul li {
-  margin-top: 20px;
-  padding: 0 0 5px 0;
+  margin-top: 5px;
+  padding: 0 0 0 0;
   text-indent: 0;
 }
 
@@ -87,6 +108,18 @@ h1 {
   margin-bottom: 10px;
 }
 
+.strings1, .strings2 {
+  float: none;
+  display: block;
+  width: auto;
+}
+
+.image1, .image2 {
+  float: none;
+  display: block;
+  width: 100%;
+}
+
 #main {
   margin-bottom: 20px;
   padding: 0;
@@ -94,9 +127,77 @@ h1 {
 
 #sub {
   margin-left: 10px;
+  position: static;
   float: none;
 }
 
 .floor {
   width: 300px;
+}
+
+#c01, #c02, #c03, #c04, #c05, #c06, #c07, #c08, #c09 {
+  width: 23px;
+}
+
+#c01 {
+  position: absolute;
+  top: 89%;
+  left: 55%;
+}
+
+#c02 {
+  position: absolute;
+  top: 89%;
+  left: 69%;
+}
+
+#c03 {
+  position: absolute;
+  top: 79%;
+  left: 28%;
+}
+
+#c04 {
+  position: absolute;
+  top: 45%;
+  left: 32%;
+}
+
+#c05 {
+  position: absolute;
+  top: 24%;
+  left: 60%;
+}
+
+#c06 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+
+#c07 {
+  position: absolute;
+  top: 30%;
+  left: 54%;
+}
+
+#c08 {
+  position: absolute;
+  top: 34%;
+  left: 65%;
+}
+
+#c09 {
+  position: absolute;
+  top: 38%;
+  left: 47%;
+}
+
+.addr {
+  float: none;
+}
+
+.addr p {
+  font-size: 18px;
+  margin: 5px;
 }

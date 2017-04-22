@@ -25,7 +25,7 @@
     width:50%;
     background-image:url(../images/bk_orange.jpg);
     color:white;
-    h3{text-align:center;}
+    h3{text-align:center; margin-bottom: 0px;}
     p{padding:20px;}
     a{
         background-color: green;
@@ -44,28 +44,23 @@
 #illust01 {
     line-height: 0;
     position: absolute;
-    top: -150px;
-    left: -65px;
-}
-#illust02 {
-    line-height: 0;
-    position: absolute;
     top: -130px;
-    left: 750px;
+    left: -80px;
 }
 #illust03 {
     line-height: 0;
     position: absolute;
-    top: -150px;
-    left: 850px;
+    top: -140px;
+    left: 730px;
 }
 
 #greeting,#news {padding:5px 15px; }
 #news ul li {
     margin-top: 20px;
-    padding: 0 10px 20px 160px;
+    padding: 0 10px 10px 160px;
     border-bottom: 1px dotted #333333;
     text-indent: -160px;
+    list-style-type:none;
 }
 #news li::before {
  content: "NEW!";

@@ -1,15 +1,21 @@
 @charset "utf-8";
 
 .logo {
-    height:220px;
+    // height:200px;
     float:left;
     position:relative;
 }
- .tel {
-    position:absolute;
-    top:75px;
-    left:430px;
- }
+ .addr {
+    // position:absolute;
+    // top:75px;
+    // left:430px;
+    margin-top:50px;
+    margin-bottom: 10px;
+    color:#4b2507;
+    font-size:24px;
+    font-weight: bold;
+    float:right;
+}
 
     // table-layout: fixed;
 table {table-layout: auto; width:100%;}
