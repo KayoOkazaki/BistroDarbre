@@ -1,25 +1,28 @@
 @charset "utf-8";
+@import "variables"; //定数外部ファイル
+@import "module"; //外部ファイルモジュール
+
 h1{ line-height:60px; font-size:22px;}
-h2{font-size:18px;}
-h3{font-size:14px;}
-table tr {font-size:12px;}
-ul li {font-size:12px;}
-dl dt, dl dd {font-size:12px;}
-p {font-size:12px;}
+h2{ font-size:18px;}
+h3{ font-size:14px;}
+table tr { font-size:12px;}
+ul li { font-size:12px;}
+dl dt, dl dd { font-size:12px;}
+p { font-size:12px;}
 header, nav, #mainimg, #contents, footer { width: 410px;}
+
 .logo {
-    float:none;
+    position: static;　float:none;
     margin:25px 0 0px 160px;
-    position: static;
+    img { width:140px;}
  }
- .logo img {width:140px;}
+
 .tel {
     float:none;
+    margin:5px 50px;
+    width:350px;
     font-size: 25px;
     font-weight: bold;
-    color:#552707;
-    width:350px;
-    margin:5px 50px;
 }
 .resavation{
     float:none;
@@ -31,42 +34,39 @@ header, nav, #mainimg, #contents, footer { width: 410px;}
 nav {
      position: static;float:none;
      margin:20px 65px;
- }
+}
 
 
 ////////////////////////////////////////////
 //index
 ////////////////////////////////////////////
 #main, #news h2, #news ul li, #fb h2{
-    width: auto;
-    margin: 0;
     float: none;
+    margin: 0;
+    width: auto;
 }
- #fb div img{width:430px;}
+ #fb div img{ width:430px;}
 
-#mainimg {
-    height: 217px;
-}
-#mainimg ul li img {
-    width: 450px;
-}
-#illust01 {position:static; display:none;}
-#illust02 {position:static; display:none;}
-#illust03 {position:static; display:none;}
+#mainimg { height: 217px;}
+#mainimg ul li img { width: 450px;}
+#illust01 { position:static; display:none;}
+#illust02 { position:static; display:none;}
+#illust03 { position:static; display:none;}
+
 #news ul li {
     margin-top: 5px;
     padding: 0 0 0 0;
     text-indent: 0;
+    time {
+        width: auto;
+        margin-bottom: 10px;
+        display: block;
+    }
 }
-#news ul li time {
-    width: auto;
-    display: block;
-    margin-bottom: 10px;
-}
-.strings1,.strings2 {float:none; display: block; width: auto;
-}
-.image1,.image2{float:none; display: block; width: 100%;
-}
+
+.strings1,.strings2 { float:none; display: block; width: auto;}
+.image1,.image2 { float:none; display: block; width: 100%;}
+
 ////////////////////////////////////////////
 
 #main {
@@ -81,58 +81,22 @@ nav {
 ////////////////////////////////////////////
 //info
 ////////////////////////////////////////////
-.floor{width:300px;}
-#c01,#c02,#c03,#c04,#c05,#c06,#c07,#c08,#c09 {width:23px;}
-#c01 {
-    position:absolute;
-    top:89%;
-    left:55%;
-}
-#c02 {
-    position:absolute;
-    top:89%;
-    left:69%;
-}
-#c03 {
-    position:absolute;
-    top:79%;
-    left:28%;
-}
-#c04 {
-    position:absolute;
-    top:45%;
-    left:32%;
-}
-#c05 {
-    position:absolute;
-    top:24%;
-    left:60%;
-}
-#c06 {
-    position:absolute;
-    top:25%;
-    left:50%;
-}
-#c07 {
-    position:absolute;
-    top:30%;
-    left:54%;
-}
-#c08 {
-    position:absolute;
-    top:34%;
-    left:65%;
-}
-#c09 {
-    position:absolute;
-    top:38%;
-    left:47%;
-}
+.floor { width:300px;}
+#c01,#c02,#c03,#c04,#c05,#c06,#c07,#c08,#c09 { width:23px;}
+#c01 {@include free_position(89%,55%);}
+#c02 {@include free_position(89%,69%);}
+#c03 {@include free_position(79%,28%);}
+#c04 {@include free_position(45%,32%);}
+#c05 {@include free_position(24%,60%);}
+#c06 {@include free_position(25%,50%);}
+#c07 {@include free_position(30%,54%);}
+#c08 {@include free_position(34%,65%);}
+#c09 {@include free_position(38%,47%);}
 
 ////////////////////////////////////////////
 //reservation
 ////////////////////////////////////////////
 .addr{
     float: none;
-    p{font-size:18px; margin:5px;}
+    p { font-size:18px; margin:5px;}
 }

@@ -1,3 +1,6 @@
+@charset "utf-8";
+@import "variables"; //定数外部ファイル
+
 body {
     margin: 0;
     padding: 0;
@@ -5,30 +8,19 @@ body {
     font-size: 87.5%;
     line-height: 1.5;
 }
-p {
-    margin: 0 0 10px 0;
-}
-img {
-    border: 0;
-}
+p { margin: 0 0 10px 0;}
+img { border: 0;}
 table {
     width: 100%;
     border-collapse: collapse;
+    th, td{
+        padding: 15px;
+        border: 1px solid $char_color;
+    }
 }
+
 table caption {
     overflow: hidden;
     text-align: left;
+    p { margin-bottom: 30px;}
 }
-table caption p {
-    margin-bottom: 30px;
-}
-table th, table td {
-    padding: 15px;
-    border: 1px solid #775644;
-}
-// table tr th:first-child {
-//     width: 30%;
-// }
-// table tr td:nth-child(2), table tr td:nth-child(3) {
-//     text-align: center;
-// }

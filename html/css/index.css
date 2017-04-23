@@ -46,7 +46,7 @@
 }
 
 .strings2 a {
-  background-color: green;
+  background-color: #008000;
   color: white;
   border-radius: 3px;
 }
@@ -87,15 +87,15 @@
 #news ul li {
   margin-top: 20px;
   padding: 0 10px 10px 160px;
-  border-bottom: 1px dotted #333333;
+  border-bottom: 1px dotted #552707;
   text-indent: -160px;
   list-style-type: none;
 }
 
-#news li::before {
+#news ul li::before {
   content: "NEW!";
   font-size: 10px;
-  background-color: green;
+  background-color: #008000;
   color: white;
   border-radius: 3px;
 }

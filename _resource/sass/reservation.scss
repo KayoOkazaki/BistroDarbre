@@ -1,38 +1,33 @@
 @charset "utf-8";
+@import "variables"; //カラーコード変数
 
 .logo {
-    // height:200px;
     float:left;
     position:relative;
 }
  .addr {
-    // position:absolute;
-    // top:75px;
-    // left:430px;
     margin-top:50px;
     margin-bottom: 10px;
-    color:#4b2507;
+    color:$char_color;
     font-size:24px;
     font-weight: bold;
     float:right;
 }
 
-    // table-layout: fixed;
-table {table-layout: auto; width:100%;}
-table th {width:25%; text-align:left;}
-table td {width:75%;}
+table {
+    table-layout: auto;
+    width:100%;
+    th { width:25%; text-align:left;}
+    td { width:75%;}
+}
+
 table tr:last-child td{
-text-align: center;
+    text-align: center;
 }
-input[type="email"] {
-    width: 300px;
-}
-input[type="text"] {
-    width: 200px
-}
-input[type="textarea"] {
-    width: 200px;
-}
+
+input[type="email"] { width: 300px;}
+input[type="text"] { width: 200px;}
+input[type="textarea"] { width: 200px;}
 
 // サイドを固定表示にする
 #sub {

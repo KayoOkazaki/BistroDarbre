@@ -1,34 +1,33 @@
 @charset "utf-8";
+@import "variables"; //定数外部ファイル
+@import "module"; //外部ファイルモジュール
 
 .bxslider img {
     margin: 0 auto;
     display:block;
 }
 // 回り込み解除
-// .strings {float:left;width:65%;}
-// .image img{float:right;width:30%;}
 .strings1 {
-    float:left;width:50%;
+    float:left; width:50%;
     background-image:url(../images/bk_green.jpg);
     color:white;
-    h3{text-align:center;}
-    p{padding:20px;}
-    a{
-        background-color: #FF6600;
+    h3 {text-align:center;}
+    p { padding:20px;}
+    a {
+        background-color: $accent_color2;
         color: white;
         border-radius: 3px;}
 }
-.image1 img{float:right;width:50%;}
+.image1 img{ float:right; width:50%;}
 
 .strings2 {
-    float:right;
-    width:50%;
+    float:right; width:50%;
     background-image:url(../images/bk_orange.jpg);
     color:white;
-    h3{text-align:center; margin-bottom: 0px;}
-    p{padding:20px;}
-    a{
-        background-color: green;
+    h3 { text-align:center; margin-bottom: 0px;}
+    p { padding:20px;}
+    a {
+        background-color: $accent_color1;
         color: white;
         border-radius: 3px;}
 }
@@ -40,34 +39,30 @@
  clear:both;
 }
 
-#contentsInner {position: relative;}
+#contentsInner { position: relative;}
 #illust01 {
     line-height: 0;
-    position: absolute;
-    top: -130px;
-    left: -80px;
+    @include free_position(-130px,-80px);
 }
 #illust03 {
     line-height: 0;
-    position: absolute;
-    top: -140px;
-    left: 730px;
+    @include free_position(-140px,730px);
 }
 
-#greeting,#news {padding:5px 15px; }
+#greeting,#news { padding:5px 15px;}
 #news ul li {
     margin-top: 20px;
     padding: 0 10px 10px 160px;
-    border-bottom: 1px dotted #333333;
+    border-bottom: 1px dotted $char_color;
     text-indent: -160px;
     list-style-type:none;
-}
-#news li::before {
- content: "NEW!";
- font-size: 10px;
- background-color: green;
- color: white;
- border-radius: 3px;
+    &::before {
+         content: "NEW!";
+         font-size: 10px;
+         background-color: $accent_color1;
+         color: white;
+         border-radius: 3px;
+    }
 }
 
 

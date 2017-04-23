@@ -1,14 +1,16 @@
 @import url(common.css);
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico");
 header {
-  margin: 0 auto 0 auto;
-  margin-top: 10px;
+  margin: 0px auto 0 auto;
   width: 960px;
 }
 
 .logo {
   float: left;
   margin: 0 10px;
+  position: relative;
+  top: 20px;
+  left: 0px;
 }
 
 .resavation {
@@ -21,12 +23,6 @@ header {
   font-size: 30px;
   font-weight: bold;
   color: #552707;
-}
-
-.logo {
-  position: relative;
-  top: 20px;
-  left: 0px;
 }
 
 nav {
@@ -130,14 +126,14 @@ body {
 }
 
 #move-page-top {
-  color: green;
+  color: #008000;
   text-decoration: none;
   display: block;
   cursor: pointer;
 }
 
 #move-page-top:hover {
-  color: #6e360b;
+  color: #552707;
 }
 
 #main {

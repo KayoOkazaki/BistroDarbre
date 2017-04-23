@@ -1,0 +1,6 @@
+// 自由配置の設定
+@mixin free_position($y:0px,$x:0px,$pos:absolute){
+    position: $pos;
+    top: $y;
+    left: $x;
+}

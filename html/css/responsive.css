@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1 {
   line-height: 60px;
   font-size: 22px;
@@ -32,9 +33,9 @@ header, nav, #mainimg, #contents, footer {
 }
 
 .logo {
-  float: none;
-  margin: 25px 0 0px 160px;
   position: static;
+  　float: none;
+  margin: 25px 0 0px 160px;
 }
 
 .logo img {
@@ -43,11 +44,10 @@ header, nav, #mainimg, #contents, footer {
 
 .tel {
   float: none;
+  margin: 5px 50px;
+  width: 350px;
   font-size: 25px;
   font-weight: bold;
-  color: #552707;
-  width: 350px;
-  margin: 5px 50px;
 }
 
 .resavation {
@@ -64,9 +64,9 @@ nav {
 }
 
 #main, #news h2, #news ul li, #fb h2 {
-  width: auto;
-  margin: 0;
   float: none;
+  margin: 0;
+  width: auto;
 }
 
 #fb div img {
@@ -104,8 +104,8 @@ nav {
 
 #news ul li time {
   width: auto;
-  display: block;
   margin-bottom: 10px;
+  display: block;
 }
 
 .strings1, .strings2 {

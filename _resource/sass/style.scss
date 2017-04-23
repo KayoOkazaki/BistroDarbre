@@ -1,50 +1,56 @@
 @charset "utf-8";
 @import url(common.css); // for reset css
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Pacifico');
+@import "variables"; //定数外部ファイル
+
 //************************************************************
 //  header
 //************************************************************
 header {
-     margin: 0 auto 0 auto;
-     margin-top:10px;
+     margin: 0px auto 0 auto;
      width: 960px;
 }
 
-.logo {float:left; margin:0 10px; }
-.resavation{float:right; margin:0 10px;}
-.tel {margin-top:30px; font-size: 30px; font-weight: bold; color:#552707;}
+.logo { float:left; margin:0 10px;
+    position: relative;
+    top: 20px;
+    left: 0px;
+}
 
-.logo {
-     position: relative;
-     top: 20px;
-     left: 0px;
- }
+.resavation{ float:right; margin:0 10px;}
+.tel {
+    margin-top:30px;
+    font-size: 30px;
+    font-weight: bold;
+    color:$char_color;
+}
+
 nav {
     clear:both;
-     width: 600px;
-     position: relative;
-     top: -30px;
-     left: 380px;
+    width: 600px;
+    position: relative;
+    top: -30px;
+    left: 380px;
+    ul {
+        margin: 0 0 5px 0;
+        list-style-type: none;
+        padding-left: 0;
+        overflow: hidden;
+        li {
+            width: 141px;
+            height:75px;
+            float: left;
+            overflow: hidden;
+            a {
+                display: block;
+                height: 0;  //li要素の高さ分だけを表示するためにa要素の高さを0にする
+                padding-top: 75px;
+                overflow: hidden;
+            }
+        }
+    }
 }
-nav ul {
-    margin: 0 0 5px 0;
-    list-style-type: none;
-    padding-left: 0;
-    overflow: hidden;
-}
-nav ul li {
-    width: 141px;
-    height:75px;
-    float: left;
-    overflow: hidden;
-}
-nav ul li a {
-    display: block;
-    height: 0;  //li要素の高さ分だけを表示するためにa要素の高さを0にする
-    padding-top: 75px;
-    overflow: hidden;
-}
-// nav ul li#nav_top a {background: url(../images/nav_sample01.gif) no-repeat;}
+
 nav ul li#nav_top a {background: url(../images/navbtn01.gif) no-repeat;}
 nav ul li#nav_menu a {background: url(../images/navbtn02.gif) no-repeat;}
 nav ul li#nav_polisy a {background: url(../images/navbtn03.gif) no-repeat;}
@@ -73,8 +79,8 @@ h1{
      line-height:88px; //縦揃え
 }
 h2 {
-    border-left: 10px solid orange;
-    border-bottom: 3px solid #552707;
+    border-left: 10px solid $accent_color3;
+    border-bottom: 3px solid $char_color;
     padding-left:10px;
     margin-top:40px;
     font-family: 'Dancing Script', cursive;
@@ -83,13 +89,13 @@ h2 {
     width: 960px;
     margin:0 auto 0 auto;
 }
-#contentsInner {position: relative;}
+#contentsInner { position: relative;}
 
 body {
-     background-image: url("../images/background.jpg");
-     background-repeat: repeat-x;
+    background-image: url("../images/background.jpg");
+    background-repeat: repeat-x;
     background-position: center top;
-    background-color: #ffcb4f;
+    background-color: $back_color;
 }
 /////////////////////////////
 //戻るボタン
@@ -104,13 +110,13 @@ body {
     text-align:center;
 }
 #move-page-top {
-color:green;
-text-decoration:none;
-display:block;
-cursor:pointer;
+    color:$accent_color1;
+    text-decoration:none;
+    display:block;
+    cursor:pointer;
 }
 #move-page-top:hover {
-color:#6e360b;
+color:$char_color;
 }
 
 //************************************************************
@@ -120,25 +126,17 @@ color:#6e360b;
     width:670px;
     padding:20px;
     float:right;
-    background-color:#ffe4b5;
+    background-color:$contents_color;
     margin-bottom: 30px;
 }
-// #greeting,#news {padding:5px 15px; }
-// #news ul li {
-//     margin-top: 20px;
-//     padding: 0 10px 20px 160px;
-//     border-bottom: 1px dotted #333333;
-//     text-indent: -160px;
-// }
-// #news li::before {
-//  content: "NEW!";
-//  font-size: 10px;
-//  background-color: #6668ff;
-//  color: white;
-//  border-radius: 3px;
-// }
+// // なぜがメディアクエリーが効かない
+//  @media screen and (max‐width: 480px) {
+//   h2 {color:red;}
+//  }
 
-
+//************************************************************
+//  sub
+//************************************************************
 #sub {
     width:228px;
     float:left;
@@ -146,15 +144,6 @@ color:#6e360b;
     margin-bottom: 30px;
 }
 
-// // なぜがメディアクエリーが効かない
-//  @media screen and (max‐width: 480px) {
-//   h2 {color:red;}
-//  }
-
-
-//************************************************************
-//  sub
-//************************************************************
 // サイドを固定表示にする
 // #sub {
 //     position:fixed;

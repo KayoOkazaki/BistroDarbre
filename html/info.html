@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="icon" type="image/ico" href="images/favicon.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="js/colorbox/jquery.colorbox.js"></script>
+    <script src="js/colorbox/jquery.colorbox-min.js"></script>
     <script>
         //////////////////////////////////////////////////////////////////
         // レスポンシブWEBデザイン（幅480pxまでのサイズ）
@@ -28,11 +28,13 @@
                 $('.group1').each(function(index, element){
                     console.log($(element).attr('href'));
                     $(element).attr('href', 'images/photo/floor/small/room0' + (index+1) + '.jpg')
+                    console.log($(element).attr('href'));
                 });
                 //マップの写真をスマホサイズに合わせる
                 $('.group2').each(function(index, element){
                     console.log($(element).attr('href'));
                     $(element).attr('href', 'images/photo/map/small/map_img0' + (index+1) + '.jpg')
+                    console.log($(element).attr('href'));
                 });
             }
             else{
