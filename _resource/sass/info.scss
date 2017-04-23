@@ -31,4 +31,7 @@ th.thead02 { width:14%;}
 caption { font-weight:bold; font-size:18px;}
 
 // サイドを固定表示にする
-#sub {@include free_position(258px,0px,fixed);}
+#sub {
+  position: fixed;
+  top: 258px;
+}

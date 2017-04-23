@@ -145,10 +145,16 @@ body {
 }
 
 #sub {
-  width: 228px;
+  width: 230px;
   float: left;
   margin: 0 auto 0 auto;
   margin-bottom: 30px;
+  background-color: #ffe4b5;
+}
+
+#sub aside {
+  margin: 15px auto;
+  text-align: center;
 }
 
 footer {
