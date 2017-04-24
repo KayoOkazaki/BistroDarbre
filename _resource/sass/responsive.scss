@@ -19,6 +19,7 @@ header, nav, #mainimg, #contents, footer { width: 410px;}
 
 .tel {
     float:none;
+    clear:both;
     margin:5px 50px;
     width:350px;
     font-size: 25px;
@@ -77,6 +78,13 @@ nav {
     margin-left: 10px;
     position:static;
     float: none;
+}
+
+////////////////////////////////////////////
+//menu
+////////////////////////////////////////////
+.image_wine {width:400px; margin:0 auto; text-align: center;
+    img {width:400px; }
 }
 ////////////////////////////////////////////
 //info
