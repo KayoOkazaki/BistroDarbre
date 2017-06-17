@@ -1,3 +1,26 @@
+<?php
+require_once "php/app/util.inc.php";
+require_once "php/app/db.inc.php";
+
+try {
+
+	//DB接続
+	$pdo = db_init();
+
+	//newsテーブル取得
+	$sql = "SELECT * FROM news ORDER BY posted DESC";
+	$stmt = $pdo->query($sql);
+	$allnews = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+}
+catch (PDOException $e) {
+
+	echo $e->getMessage();
+	$pdo = null;
+	exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -86,12 +109,12 @@
                     <h2>Darbre からのお知らせ</h2>
                       <div>
                         <ul>
-                            <li><a href="#"><time datetime="2017-04-01">2017年04月01日</time>期間限定！季節のメニュー開始</a></li>
-                            <li><time datetime="2017-03-14">2017年03月14日</time>ホワイトデープランをご用意しました。</li>
-                            <li><time datetime="2017-02-14">2017年02月14日</time>バレンタインフェア。チョコレート・ケーキサービス！</li>
-                            <li><time datetime="2016-12-01">2016年11月30日</time>クリスマスメニューのご案内</li>
-                            <li><time datetime="2016-10-01">2016年10月01日</time>ハロウィンフェアのご案内</li>
-                            <li><time datetime="2016-07-01">2016年07月01日</time>夏季限定！冷製パスタメニュー開始</li>
+						<?php foreach ($allnews as $news): ?>
+					      <li><a href="<?php echo $news["link"]; ?>">
+					          <time datetime="<?php echo $news["posted"]; ?>"><?php echo $news["posted"]; ?></time>
+					          <?php echo $news["title"]; ?></a>
+					      </li>
+			 		    <?php endforeach;?>
                         </ul>
                     </div>
                 </section>

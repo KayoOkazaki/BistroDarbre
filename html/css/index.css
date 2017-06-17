@@ -99,3 +99,8 @@
   color: white;
   border-radius: 3px;
 }
+
+#news div {
+  height: 200px;
+  overflow: auto;
+}

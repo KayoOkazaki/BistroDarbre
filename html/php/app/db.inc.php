@@ -2,7 +2,7 @@
 
 //DB接続情報
 const HOST = "localhost";
-const DBNAME = "crescent";
+const DBNAME = "darbre";
 const DBUSER = "sysuser";
 const DBPASS = "secret";
 
