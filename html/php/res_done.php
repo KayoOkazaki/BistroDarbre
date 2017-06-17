@@ -8,7 +8,7 @@
                        またメールアドレスに不備がございますと確認メールが届かない場合がございます。<br>
                        その際はお手数ではございますが、<b>03-3760-0447</b>までお電話にてご連絡ください。
                     </p>
-                    <p><a href="index.html">トップページへ戻る</a></p>
+                    <p><a href="../index.html">トップページへ戻る</a></p>
                 </article>
             </div>
 <?php require_once 'app/footer.php';?>

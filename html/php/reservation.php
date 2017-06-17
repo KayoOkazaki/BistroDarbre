@@ -168,7 +168,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
                 if(count($errMsg) >0) {
                     	// エラーメッセージを表示する
                     	foreach($errMsg as $value) {
-                    		echo "<span style='color:red;'>" . $value .$token. "</span><br>" . "\n";
+                    		echo "<span style='color:red;'>" . $value . "</span><br>" . "\n";
                     	}
                     }
                 ?>
