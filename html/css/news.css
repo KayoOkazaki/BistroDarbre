@@ -1,0 +1,16 @@
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-bottom: 15px;
+}
+
+.media {
+  width: 80%;
+}
+
+#sub {
+  position: fixed;
+  top: 258px;
+}
